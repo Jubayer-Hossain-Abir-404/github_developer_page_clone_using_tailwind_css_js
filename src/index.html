@@ -9,211 +9,145 @@
   <title>Developers - GitHub Docs</title>
 </head>
 <body class="bg-white-400">
-    <div class="lg:grid lg:grid-cols-5 lg:gap-4 lg:divide-x overflow-auto">
-        
+    <div class="lg:grid lg:grid-cols-5 lg:divide-x">
+        <div class="lg:overflow-y-auto lg:h-screen sticky top-0 left-0 right-0 z-40 lg:overscroll-contain lg:overflow-hidden bg-white">
             <div class="m-7">
-                <div class="1st_div flex flex-col">
-                    <div class="flex justify-between items-center">
-                        <span class="text-base font-[Segoe UI] font-semibold cursor-pointer">
-                            <img class="h-8 inline" src="../assets/github_logo.png" alt="">
-                            GitHub Docs
-                        </span>
-                        <span class="text-3xl cursor-pointer lg:hidden block">
-                            <ion-icon name="menu" id="main_menu"></ion-icon>
-                        </span>
-                    </div>
-                    <div class="lg:block hidden transition-all ease-in duration-500" id="mob_nav">
-                        <hr class="lg:hidden block mt-4 max-w-full">
-                    <div class="my-6  items-center lg:flex hidden">
-                        <ion-icon name="arrow-back-outline"></ion-icon>
-                        <p class="mx-1 text-xs hover:underline underline-offset-1 cursor-pointer">All Products</p>
-                    </div>
-                    <div class="lg:block hidden -mt-4 cursor-pointer">
-                        Developers
-                    </div>
-                    <div class="lg:hidden block mt-4">
-                        <p class="text-[14px] text-gray-500 hover:underline underline-offset-1 cursor-pointer">Developers</p>
-                    </div>
-                    
-                    <!-- overview start -->
-                    <div class="my-6">
-                        <div class="lg:flex hidden items-center justify-between cursor-pointer" id="overview-btn">
-                            Overview
-                            <ion-icon name="chevron-down-outline" id="chevron_icon"></ion-icon>
-                        </div>
-                        <div class="divide-x-[1px] divide-black">
-                            <div></div>
-                            <div class="hidden flex-col mt-1 p-2 text-sm w-full" id="overview-dropdown">
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">About GitHub's APIs</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">Managing deploy keys</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">SSH agent forwarding</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">Secret scanning</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">Replace GitHub Services</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">GitHub Developer Program</a>
-                            </div>
-                        </div>
-                        <div class="lg:hidden flex items-center justify-between cursor-pointer" id="developers-btn">
-                            Developers
-                            <ion-icon name="chevron-down-outline" id="chevron_icon"></ion-icon>
-                        </div>
-                        
-                        <div class="hidden flex-col mt-1 p-2 text-sm w-full" id="developers-dropdown">
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">Get Started</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">Account and profile</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">Authentication</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">Repostories</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">GitHub</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">Enterprise administrators</a>
-                        </div>
-                        <hr class="lg:hidden block mt-3">
-                    </div>
-                    <!-- overview end -->
-    
-                    <!-- webhooks and events start -->
-                    <div class="-mt-1 lg:block hidden">
-                        <div class="flex items-center justify-between cursor-pointer" id="webhooks-btn">
-                            Webhooks and events
-                            <ion-icon name="chevron-down-outline" id="chevron_icon_webhooks"></ion-icon>
-                        </div>
-                        <div class="hidden flex-col mt-1 pb-2 text-sm w-full" id="webhooks-dropdown">
-                                <a href="#" class="py-2">Webhooks</a>
-                                <a href="#" class="py-2">Events</a>
-                        </div>
-                    </div>
-                    <div class="-mt-1 lg:hidden block">
-                        <div class="lg:hidden flex items-center justify-between cursor-pointer" id="mob-free-btn">
-                            Free, Pro, & Team
-                            <ion-icon name="chevron-down-outline" id="chevron_icon"></ion-icon>
-                        </div>
-                        
-                        <div class="hidden flex-col mt-1 p-2 text-sm w-full" id="mob-free-dropdown">
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">Enterprise Cloud</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">Enterprise Server 3.4</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">Enterprise Server 3.3</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">Enterprise Server 3.2</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">Enterprise Server 3.1</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">GitHub AE</a>
-                        </div>
-                        <hr class="lg:hidden block mt-3">
-                    </div>
-                    <!-- webhooks and event end -->
-    
-                    <!-- Apps start -->
-                    <div class="lg:block hidden my-5">
-                        <div class="flex items-center justify-between cursor-pointer" id="apps-btn">
-                            Apps
-                            <ion-icon name="chevron-down-outline" id="chevron_icon_apps"></ion-icon>
-                        </div>
-                        <div class="hidden flex-col mt-1 pb-2 text-sm w-full" id="apps-dropdown">
-                                <a href="#" class="py-2">Getting started with apps</a>
-                                <a href="#" class="py-2">Building GitHub Apps</a>
-                                <a href="#" class="py-2">Managing GitHub Apps</a>
-                                <a href="#" class="py-2">Building OAuth Apps</a>
-                                <a href="#" class="py-2">Managing OAuth Apps</a>
-                                <a href="#" class="py-2">Guides</a>
-                        </div>
-                    </div>
-                    <div class="lg:hidden block my-5">
-                        <div class="lg:hidden flex items-center justify-between cursor-pointer" id="mob-english-btn">
-                            English
-                            <ion-icon name="chevron-down-outline" id="chevron_icon"></ion-icon>
-                        </div>
-                        
-                        <div class="hidden flex-col mt-1 p-2 text-sm w-full" id="mob-english-dropdown">
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">English</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">Spanish</a>
-                                <a href="#" class="px-2 py-1 hover:bg-gray-200">Chinese</a>
-                        </div>
-                        <hr class="lg:hidden block mt-3">
-                    </div>
-                    <!-- Apps end -->
-    
-                    <!-- Github Marketplace start -->
-                    <div class="lg:block hidden">
-                        <div class="flex items-center justify-between cursor-pointer" id="github-market-btn">
-                            GitHub Marketplace
-                            <ion-icon name="chevron-down-outline" id="chevron_icon_github_market"></ion-icon>
-                        </div>
-                        <div class="hidden flex-col mt-1 pb-2 text-sm w-full" id="github-market-dropdown">
-                                <a href="#" class="py-2">Overview</a>
-                                <a href="#" class="py-2">Create Marketplace apps</a>
-                                <a href="#" class="py-2">Marketplace API usage</a>
-                                <a href="#" class="py-2">List an app on the Marketplace</a>
-                                <a href="#" class="py-2">Sell apps on the Marketplace</a>
-                        </div>
-                    </div>
-                    <div class="lg:hidden block">
-                        <button class="outline outline-offset-2 outline-gray-100 hover:bg-gray-50 text-left focus:ring-2 focus:to-blue-400 rounded w-full" id="english-btn">
-                            <p class="mx-2">Sign up</p>
-                        </button>
-                    </div>
-                    <div class="lg:hidden block mt-4">
-                        <label class="relative block">
-                            <span class="sr-only">Search</span>
-                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                                <ion-icon class="text-gray-600" name="search-outline"></ion-icon>
+                    <div class="1st_div flex flex-col">
+                        <div class="flex justify-between items-center sticky top-0 z-40 bg-white" id="left_nav_top">
+                            <span class="text-base font-[Segoe UI] font-semibold cursor-pointer">
+                                <img class="h-8 inline" src="../assets/github_logo.png" alt="">
+                                GitHub Docs
                             </span>
-                            <input class="placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search topics, products..." type="text" name="search"/>
-                        </label>
-                    </div>
-                    
-                    <!-- Github Marketplace end -->
-                    </div>
-                    
-                </div>
-            </div>
-        
-        
-        <div class="lg:col-span-4">
-            
-            <div class="m-7">
-                <div class="flex justify-between items-center lg:static absolute">
-                    <p class="mx-1 text-[14px] text-gray-500 hover:underline underline-offset-1 cursor-pointer lg:block hidden">Developers</p>
-                    <ul class="md:flex md:items-center z-[-1] md:z-auto lg:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-                        <li class="mx-4 my-6 md:my-0 lg:block hidden">
-                            <button class="hover:bg-gray-100 focus:ring-2 focus:to-blue-400 px-4 py-1 rounded" id="free-pro-btn">
-                                <div class="flex items-center">
-                                    <p class="text-sm font-[Segoe UI] font-semibold">Free, Pro, & Team </p>
-                                    <ion-icon name="chevron-down-outline" class="h-4"></ion-icon>
-                                </div> 
-                            </button>
-                            <div class="bg-white absolute hidden flex-col rounded mt-1 -ml-8 p-2 text-sm w-48 border-2 border-gray-100" id="free-pro-dropdown">
-                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Free, Pro, & Team</a>
-                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Cloud</a>
-                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.4</a>
-                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.3</a>
-                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.2</a>
-                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.1</a>
-                                <a href="#" class="px-2 py-1 hover:bg-blue-600">GitHub AE</a>
-                                <a href="#" class="px-2 py-1 hover:bg-blue-600 text-[10px]">
-                                    All Enterprise Server releases
-                                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                                </a>
-                                <a href="#" class="px-2 py-1 hover:bg-blue-600 text-[10px]">
-                                    About Versions
-                                    <ion-icon name="information-circle-outline"></ion-icon>
-                                </a>
+                            <span class="text-3xl cursor-pointer lg:hidden block">
+                                <ion-icon name="menu" id="main_menu"></ion-icon>
+                            </span>
+                        </div>
+                        <div class="lg:block hidden transition-all ease-in duration-500" id="mob_nav">
+                            <hr class="lg:hidden block mt-4">
+                        <div class="my-6  items-center lg:flex hidden">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                            <p class="mx-1 text-xs hover:underline underline-offset-1 cursor-pointer">All Products</p>
+                        </div>
+                        <div class="lg:block hidden -mt-4 cursor-pointer">
+                            Developers
+                        </div>
+                        <div class="lg:hidden block mt-4">
+                            <p class="text-[14px] text-gray-500 hover:underline underline-offset-1 cursor-pointer">Developers</p>
+                        </div>
+                        
+                        <!-- overview start -->
+                        <div class="my-6">
+                            <div class="lg:flex hidden items-center justify-between cursor-pointer" id="overview-btn">
+                                Overview
+                                <ion-icon name="chevron-down-outline" id="chevron_icon"></ion-icon>
                             </div>
-                        </li>
-                        <li class="mx-4 my-6 md:my-0 lg:block hidden">
-                            <button class="hover:bg-gray-100 focus:ring-2 focus:to-blue-400 px-4 py-1 rounded" id="english-btn">
-                                <div class="flex items-center">
-                                    <p class="text-sm font-[Segoe UI] font-semibold">English </p>
-                                    <ion-icon name="chevron-down-outline" class="h-4"></ion-icon>
-                                </div> 
-                            </button>
-                            <div class="bg-white absolute hidden flex-col rounded mt-1 -ml-8 p-2 text-sm w-48 border-2 border-gray-100" id="english-dropdown">
-                                <a href="#" class="px-2 py-1 hover:bg-blue-600">English</a>
-                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Chinese</a>
-                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Spanish</a>
+                            <div class="divide-x-[1px] divide-black">
+                                <div></div>
+                                <div class="hidden flex-col mt-1 p-2 text-sm w-full" id="overview-dropdown">
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">About GitHub's APIs</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">Managing deploy keys</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">SSH agent forwarding</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">Secret scanning</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">Replace GitHub Services</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">GitHub Developer Program</a>
+                                </div>
                             </div>
-                        </li>
-                        <li class="mx-4 my-6 md:my-0 lg:block hidden">
-                            <button class="outline outline-offset-2 outline-gray-100 hover:bg-gray-50 focus:ring-2 focus:to-blue-400 px-3 rounded" id="english-btn">
-                                Sign up
+                            <div class="lg:hidden flex items-center justify-between cursor-pointer" id="developers-btn">
+                                Developers
+                                <ion-icon name="chevron-down-outline" id="chevron_icon"></ion-icon>
+                            </div>
+                            
+                            <div class="hidden flex-col mt-1 p-2 text-sm w-full" id="developers-dropdown">
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">Get Started</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">Account and profile</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">Authentication</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">Repostories</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">GitHub</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">Enterprise administrators</a>
+                            </div>
+                            <hr class="lg:hidden block mt-3">
+                        </div>
+                        <!-- overview end -->
+        
+                        <!-- webhooks and events start -->
+                        <div class="-mt-1 lg:block hidden">
+                            <div class="flex items-center justify-between cursor-pointer" id="webhooks-btn">
+                                Webhooks and events
+                                <ion-icon name="chevron-down-outline" id="chevron_icon_webhooks"></ion-icon>
+                            </div>
+                            <div class="hidden flex-col mt-1 pb-2 text-sm w-full" id="webhooks-dropdown">
+                                    <a href="#" class="py-2">Webhooks</a>
+                                    <a href="#" class="py-2">Events</a>
+                            </div>
+                        </div>
+                        <div class="-mt-1 lg:hidden block">
+                            <div class="lg:hidden flex items-center justify-between cursor-pointer" id="mob-free-btn">
+                                Free, Pro, & Team
+                                <ion-icon name="chevron-down-outline" id="chevron_icon"></ion-icon>
+                            </div>
+                            
+                            <div class="hidden flex-col mt-1 p-2 text-sm w-full" id="mob-free-dropdown">
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">Enterprise Cloud</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">Enterprise Server 3.4</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">Enterprise Server 3.3</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">Enterprise Server 3.2</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">Enterprise Server 3.1</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">GitHub AE</a>
+                            </div>
+                            <hr class="lg:hidden block mt-3">
+                        </div>
+                        <!-- webhooks and event end -->
+        
+                        <!-- Apps start -->
+                        <div class="lg:block hidden my-5">
+                            <div class="flex items-center justify-between cursor-pointer" id="apps-btn">
+                                Apps
+                                <ion-icon name="chevron-down-outline" id="chevron_icon_apps"></ion-icon>
+                            </div>
+                            <div class="hidden flex-col mt-1 pb-2 text-sm w-full" id="apps-dropdown">
+                                    <a href="#" class="py-2">Getting started with apps</a>
+                                    <a href="#" class="py-2">Building GitHub Apps</a>
+                                    <a href="#" class="py-2">Managing GitHub Apps</a>
+                                    <a href="#" class="py-2">Building OAuth Apps</a>
+                                    <a href="#" class="py-2">Managing OAuth Apps</a>
+                                    <a href="#" class="py-2">Guides</a>
+                            </div>
+                        </div>
+                        <div class="lg:hidden block my-5">
+                            <div class="lg:hidden flex items-center justify-between cursor-pointer" id="mob-english-btn">
+                                English
+                                <ion-icon name="chevron-down-outline" id="chevron_icon"></ion-icon>
+                            </div>
+                            
+                            <div class="hidden flex-col mt-1 p-2 text-sm w-full" id="mob-english-dropdown">
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">English</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">Spanish</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-gray-200">Chinese</a>
+                            </div>
+                            <hr class="lg:hidden block mt-3">
+                        </div>
+                        <!-- Apps end -->
+        
+                        <!-- Github Marketplace start -->
+                        <div class="lg:block hidden">
+                            <div class="flex items-center justify-between cursor-pointer" id="github-market-btn">
+                                GitHub Marketplace
+                                <ion-icon name="chevron-down-outline" id="chevron_icon_github_market"></ion-icon>
+                            </div>
+                            <div class="hidden flex-col mt-1 pb-2 text-sm w-full" id="github-market-dropdown">
+                                    <a href="#" class="py-2">Overview</a>
+                                    <a href="#" class="py-2">Create Marketplace apps</a>
+                                    <a href="#" class="py-2">Marketplace API usage</a>
+                                    <a href="#" class="py-2">List an app on the Marketplace</a>
+                                    <a href="#" class="py-2">Sell apps on the Marketplace</a>
+                            </div>
+                        </div>
+                        <div class="lg:hidden block">
+                            <button class="outline outline-offset-2 outline-gray-100 hover:bg-gray-50 text-left focus:ring-2 focus:to-blue-400 rounded w-full" id="english-btn">
+                                <p class="mx-2">Sign up</p>
                             </button>
-                        </li>
-                        <li class="mx-4 my-6 md:my-0 lg:block hidden">
+                        </div>
+                        <div class="lg:hidden block mt-4">
                             <label class="relative block">
                                 <span class="sr-only">Search</span>
                                 <span class="absolute inset-y-0 left-0 flex items-center pl-2">
@@ -221,32 +155,104 @@
                                 </span>
                                 <input class="placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search topics, products..." type="text" name="search"/>
                             </label>
-                        </li>
-                    </ul>
+                        </div>
+                        
+                        <!-- Github Marketplace end -->
+                        </div>
+                        
+                    </div>
+            </div>
+        </div>      
+            
+        
+        
+        <div class="lg:col-span-4 h-[1000px]">
+            
+            <div class="m-7">
+                <!-- <div class="lg:sticky bg-white"></div> -->
+                <div class="lg:sticky lg:top-0 z-40 bg-white">
+                    <div class="flex justify-between items-center lg:sticky lg:top-0 z-40 bg-white" id="top_bar">
+                        <p class="mx-1 text-[14px] text-gray-500 hover:underline underline-offset-1 cursor-pointer lg:block hidden">Developers</p>
+                        <ul class="md:flex md:items-center z-[-1] md:z-auto lg:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                            <li class="mx-4 my-6 md:my-0 lg:block hidden">
+                                <button class="hover:bg-gray-100 focus:ring-2 focus:to-blue-400 px-4 py-1 rounded" id="free-pro-btn">
+                                    <div class="flex items-center">
+                                        <p class="text-sm font-[Segoe UI] font-semibold">Free, Pro, & Team </p>
+                                        <ion-icon name="chevron-down-outline" class="h-4"></ion-icon>
+                                    </div> 
+                                </button>
+                                <div class="bg-white absolute hidden flex-col rounded mt-1 -ml-8 p-2 text-sm w-48 border-2 border-gray-100" id="free-pro-dropdown">
+                                    <a href="#" class="px-2 py-1 hover:bg-blue-600">Free, Pro, & Team</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Cloud</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.4</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.3</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.2</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.1</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-blue-600">GitHub AE</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-blue-600 text-[10px]">
+                                        All Enterprise Server releases
+                                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    </a>
+                                    <a href="#" class="px-2 py-1 hover:bg-blue-600 text-[10px]">
+                                        About Versions
+                                        <ion-icon name="information-circle-outline"></ion-icon>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="mx-4 my-6 md:my-0 lg:block hidden">
+                                <button class="hover:bg-gray-100 focus:ring-2 focus:to-blue-400 px-4 py-1 rounded" id="english-btn">
+                                    <div class="flex items-center">
+                                        <p class="text-sm font-[Segoe UI] font-semibold">English </p>
+                                        <ion-icon name="chevron-down-outline" class="h-4"></ion-icon>
+                                    </div> 
+                                </button>
+                                <div class="bg-white absolute hidden flex-col rounded mt-1 -ml-8 p-2 text-sm w-48 border-2 border-gray-100" id="english-dropdown">
+                                    <a href="#" class="px-2 py-1 hover:bg-blue-600">English</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-blue-600">Chinese</a>
+                                    <a href="#" class="px-2 py-1 hover:bg-blue-600">Spanish</a>
+                                </div>
+                            </li>
+                            <li class="mx-4 my-6 md:my-0 lg:block hidden">
+                                <button class="outline outline-offset-2 outline-gray-100 hover:bg-gray-50 focus:ring-2 focus:to-blue-400 px-3 rounded" id="english-btn">
+                                    Sign up
+                                </button>
+                            </li>
+                            <li class="mx-4 my-6 md:my-0 lg:block hidden">
+                                <label class="relative block">
+                                    <span class="sr-only">Search</span>
+                                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                        <ion-icon class="text-gray-600" name="search-outline"></ion-icon>
+                                    </span>
+                                    <input class="placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search topics, products..." type="text" name="search"/>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="mt-3 -mx-7 sticky top-16 z-40" id="top_bar_bottom_line">
                 </div>
-                <hr class="mt-3">
+                
                 <div class="lg:grid lg:grid-cols-6">
                     <div class="col-span-4">
-                        <div class="mt-9 mb-11">
+                        <div class="mt-9 mb-28">
                             <p class="text-3xl font-semibold font-[Segoe UI] mb-3">Developers</p>
                             <p class="text-2xl font-[Segoe UI] text-gray-600">Go deeper with GitHub by integrating with our APIs, customizing your GitHub workflow, and building and sharing apps with the community.</p>
                         </div>
-                        <div class="mt-4 hover:bg-gray-200 rounded cursor-pointer p-2">
+                        <div class="mt-10 hover:bg-gray-200 rounded cursor-pointer pr-2 pl-2 pb-2 pt-5">
                             <p class="text-blue-600 font-semibold">Overview</p>
                             <p class="text-gray-600">Learn about GitHub's APIs, secure your deployments, and join GitHub's Developer Program.</p>
                             <hr class="mt-3">
                         </div>
-                        <div class="-mt-2 hover:bg-gray-200 rounded cursor-pointer p-2">
+                        <div class="-mt-2 hover:bg-gray-200 rounded cursor-pointer pr-2 pl-2 pb-2 pt-5">
                             <p class="text-blue-600 font-semibold">Webhook and events</p>
                             <p class="text-gray-600">You can set up, test, and secure webhooks so your integrations can subscribe and react to events on GitHub.</p>
                             <hr class="mt-3">
                         </div>
-                        <div class="-mt-2 hover:bg-gray-200 rounded cursor-pointer p-2">
+                        <div class="-mt-2 hover:bg-gray-200 rounded cursor-pointer pr-2 pl-2 pb-2 pt-5">
                             <p class="text-blue-600 font-semibold">Apps</p>
                             <p class="text-gray-600">You can automate and streamline your workflow by building your own apps.</p>
                             <hr class="mt-3">
                         </div>
-                        <div class="-mt-2 hover:bg-gray-200 rounded cursor-pointer p-2">
+                        <div class="-mt-2 hover:bg-gray-200 rounded cursor-pointer pr-2 pl-2 pb-2 pt-5">
                             <p class="text-blue-600 font-semibold">GitHub Marketplace</p>
                             <p class="text-gray-600">List your tools in GitHub Marketplace for developers to use or purchase.</p>
                             <hr class="mt-3">
@@ -261,7 +267,7 @@
                 <div class="lg:grid lg:grid-cols-6">
                     <div class="col-span-1">
                         <div class="mt-9">
-                            <p class="text-base font-semibold font-[Segoe UI]">Did this doc help you?</p>
+                            <p class="text-base font-semibold font-[Segoe UI] whitespace-nowrap">Did this doc help you?</p>
                             <div class="flex items-center mt-4">
                                 <button class="outline outline-offset-2 outline-blue-500 hover:bg-gray-50 focus:ring-2 focus:to-blue-400 px-4 py-1 rounded">
                                     <ion-icon name="thumbs-up-outline"></ion-icon>
@@ -322,8 +328,8 @@
                 </div>
                 <!-- end of div before footer -->
                 <div class="footer mt-9">
-                    <ul class="sm:flex sm:items-center inline sm:static sm:w-auto  py-4  ">
-                        <li class="mr-4 text-xs text-gray-500">
+                    <ul class="flex sm:flex-nowrap flex-wrap sm:items-center sm:justify-start justify-center sm:static sm:w-auto py-4">
+                        <li class="mr-4 text-xs text-gray-500 whitespace-nowrap">
                             © 2022 GitHub, Inc.
                         </li>
                         <li class="mx-4 text-xs text-blue-500 hover:underline underline-offset-1 outline-blue-500 cursor-pointer">
@@ -341,7 +347,7 @@
                         <li class="mx-4 text-xs text-blue-500 hover:underline underline-offset-1 outline-blue-500 cursor-pointer">
                             Help
                         </li>
-                        <li class="mx-4 contrast-50 text-xs text-blue-500 hover:underline underline-offset-1 outline-blue-500 cursor-pointer">
+                        <li class="mx-4 sm:block hidden contrast-50 text-xs text-blue-500 hover:underline underline-offset-1 outline-blue-500 cursor-pointer">
                             <img class="h-6 inline" src="../assets/github_logo.png" alt="">
                         </li>
                         <li class="mx-4 text-xs text-blue-500 hover:underline underline-offset-1 outline-blue-500 cursor-pointer">
@@ -364,11 +370,113 @@
                         </li> 
                     </ul>
                 </div>
+                <div class="flex justify-end right ">
+                    <div class="bg-black">
+                        <p class="text-white text-center hidden" id="tool_tip">Scroll to top</p>
+                    </div>
+                    
+                </div>
+                <div class="mt-1 mb-4 pb-10 flex justify-end" >
+                    <div class="w-10 h-10 rounded-full bg-blue-600 cursor-pointer hidden" onmouseover="hover(this);" onmouseout="unhover(this);" id="back_to_top">  
+                        <p class="text-white text-center pt-1">∧</p>
+                    </div>
+                </div>
+                <div></div>
             </div>
             
         </div>
     </div>
-    <script>     
+
+    <script>
+        // for hovering
+        function hover(element) {
+            const tool_tip = document.querySelector('#tool_tip');
+            tool_tip.classList.remove('hidden');
+            tool_tip.classList.add('block');
+        }
+        function unhover(element) {
+            const tool_tip = document.querySelector('#tool_tip');
+            tool_tip.classList.add('hidden');
+            tool_tip.classList.remove('block');
+        }
+    </script>
+
+    <script>
+        // for going to the top
+        // Get the button
+        let myback_to_top_button = document.getElementById("back_to_top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 ||document.documentElement.scrollTop > 20) {
+                top_nav_bottom_line.classList.remove('top-20');
+                myback_to_top_button.classList.remove('hidden');
+                myback_to_top_button.classList.add('block');
+                
+            } else {
+                myback_to_top_button.classList.add('hidden');
+                myback_to_top_button.classList.remove('block');
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        myback_to_top_button.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+    
+    
+    <script>  
+    
+            // for top nav
+            const top_nav = document.querySelector('#top_bar');
+
+            window.addEventListener('scroll', (e) => {
+                if (window.scrollY >= 100) {
+                    top_nav.classList.add('pt-7');
+                } else {
+                    top_nav.classList.remove('pt-7');
+
+                }
+            });
+            // const left_nav_top = document.querySelector('#left_nav_top');
+
+            // window.addEventListener('scroll', (e) => {
+            //     if (window.scrollY >= 100) {
+            //         // left_nav_top.classList.add('pt-7');
+            //         // left_nav_top.classList.remove('top-0');
+            //         left_nav_top.classList.add('absolute');
+            //     } else {
+            //         // left_nav_top.classList.remove('pt-7');
+            //         left_nav_top.classList.remove('absolute');
+            //         // left_nav_top.classList.add('top-0');
+
+            //     }
+            // });
+
+            
+
+            //for top nav bottom line
+            const top_nav_bottom_line = document.querySelector('#top_bar_bottom_line');
+
+            window.addEventListener('scroll', (e) => {
+                if (window.scrollY >= 100) {
+                    top_nav_bottom_line.classList.remove('top-16');
+                    top_nav_bottom_line.classList.add('top-20');
+                } else {
+                    top_nav_bottom_line.classList.remove('top-20');
+                    top_nav_bottom_line.classList.add('top-16');
+                }
+            });
+            
+
             const overViewBtn = document.querySelector('#overview-btn')
             const overViewdropdown = document.querySelector('#overview-dropdown')
             const chevronIcon = document.querySelector('#chevron_icon')
@@ -436,21 +544,41 @@
                 }
             })
 
+
+
             //free pro & team
-            const freeProBtn = document.querySelector('#free-pro-btn')
-            const freeProdropdown = document.querySelector('#free-pro-dropdown')
+            const freeProBtn = document.querySelector('#free-pro-btn');
+            const freeProdropdown = document.querySelector('#free-pro-dropdown');
+            
 
             freeProBtn.addEventListener('click', ()=>{
                 if(freeProdropdown.classList.contains('hidden')){
                     freeProdropdown.classList.remove('hidden');
                     freeProdropdown.classList.add('flex')
                     
+                    
                 }else{
                     freeProdropdown.classList.remove('flex');
                     freeProdropdown.classList.add('hidden')
+                    
                 }
             })
 
+            // free pro % team outside button
+
+            var ignoreClickOnMeElement_free_pro_button = document.getElementById('free-pro-btn');
+            var ignoreClickOnMeElement_free_pro_dropdown = document.getElementById('free-pro-dropdown');
+
+            document.addEventListener('click', function(event) {
+                var isClickInsideElement_free_pro_btn = ignoreClickOnMeElement_free_pro_button.contains(event.target);
+                var isClickInsideElement_free_pro_dropdown = ignoreClickOnMeElement_free_pro_dropdown.contains(event.target);
+                if (!isClickInsideElement_free_pro_btn && !isClickInsideElement_free_pro_dropdown) {
+                    if(freeProdropdown.classList.contains('flex')){
+                        freeProdropdown.classList.remove('flex');
+                        freeProdropdown.classList.add('hidden');
+                    }
+                }
+            });
             //english
             const engBtn = document.querySelector('#english-btn')
             const engdropdown = document.querySelector('#english-dropdown')
